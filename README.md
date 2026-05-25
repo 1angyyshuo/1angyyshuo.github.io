@@ -25,6 +25,24 @@ npm run new "文章标题"
 
 文章会生成到 `source/_posts`。
 
+## 一键发布文章
+
+写好 Markdown 文件后，运行：
+
+```bat
+publish-post.cmd "D:\你的文章.md"
+```
+
+脚本会自动复制文章到 `source/_posts`，补齐 Hexo front matter，运行构建检查，提交 Git，并 push 到 GitHub。推送后 GitHub Actions 会自动部署。
+
+也可以指定标题、分类和标签：
+
+```powershell
+.\tools\publish-post.ps1 "D:\你的文章.md" -Title "我的文章标题" -Category "技术" -Tags Hexo,博客
+```
+
+如果你的 Markdown 已经写好了 `---` front matter，脚本会保留原内容。
+
 ## GitHub Pages 部署
 
 1. 把 `_config.yml` 里的 `url` 改成你的 Pages 地址。
