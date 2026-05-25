@@ -139,5 +139,7 @@ footer:
 inject:
   head:
     - <link rel="stylesheet" href="/css/blog-calendar.css">
+    - <link rel="stylesheet" href="/css/post-back.css">
   bottom:
     - <script src="/js/blog-calendar.js"></script>
+    - <script src="/js/post-back.js"></script>

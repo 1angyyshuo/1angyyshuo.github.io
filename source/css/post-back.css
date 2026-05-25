@@ -1,0 +1,58 @@
+.post-back-button {
+  position: fixed;
+  top: 86px;
+  left: 18px;
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid var(--card-border-color);
+  border-radius: 8px;
+  color: var(--font-color);
+  background: var(--card-bg);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  font-size: 0.9rem;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.post-back-button.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.post-back-button:hover,
+.post-back-button:focus-visible {
+  color: #fff;
+  background: var(--btn-bg);
+  outline: 0;
+}
+
+.post-back-button i {
+  font-size: 0.86rem;
+}
+
+@media (max-width: 768px) {
+  .post-back-button {
+    top: auto;
+    right: 16px;
+    bottom: 76px;
+    left: auto;
+    min-width: 42px;
+    padding: 0 11px;
+  }
+
+  .post-back-button span {
+    display: none;
+  }
+}
