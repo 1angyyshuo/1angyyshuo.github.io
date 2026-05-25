@@ -53,3 +53,9 @@ publish-post.cmd "D:\你的文章.md"
 4. 在 GitHub 仓库设置里打开 `Settings -> Pages`，`Source` 选择 `GitHub Actions`。
 
 之后每次 push，GitHub Actions 会自动构建并发布站点。
+
+## 站点基础功能
+
+- RSS：`https://1angyyshuo.github.io/atom.xml`
+- Sitemap：`https://1angyyshuo.github.io/sitemap.xml`
+- 搜索：主题已启用本地搜索，会从 `search.xml` 读取文章内容。
