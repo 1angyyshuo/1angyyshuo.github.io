@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" role="img" aria-label="桌面写作场景">
+  <rect width="520" height="420" rx="28" fill="#e7f4ee"/>
+  <path fill="#fff" d="M70 72h300a30 30 0 0 1 30 30v204a30 30 0 0 1-30 30H70a30 30 0 0 1-30-30V102a30 30 0 0 1 30-30Z"/>
+  <path fill="#2d8f76" d="M40 102a30 30 0 0 1 30-30h300a30 30 0 0 1 30 30v32H40v-32Z"/>
+  <circle cx="78" cy="103" r="9" fill="#f5b66d"/>
+  <circle cx="109" cy="103" r="9" fill="#fff7ed"/>
+  <circle cx="140" cy="103" r="9" fill="#74d1b8"/>
+  <rect x="82" y="174" width="178" height="16" rx="8" fill="#c9e9df"/>
+  <rect x="82" y="211" width="248" height="16" rx="8" fill="#dce9e4"/>
+  <rect x="82" y="248" width="198" height="16" rx="8" fill="#dce9e4"/>
+  <path fill="#f5b66d" d="M324 171h112a22 22 0 0 1 22 22v116a22 22 0 0 1-22 22H324a22 22 0 0 1-22-22V193a22 22 0 0 1 22-22Z"/>
+  <path fill="#fff7ed" d="M331 207h100v18H331zM331 244h72v18h-72zM331 281h88v18h-88z"/>
+  <path fill="#26312d" opacity=".12" d="M112 365h278c31 0 56 12 56 26s-25 25-56 25H112c-31 0-56-11-56-25s25-26 56-26Z"/>
+</svg>

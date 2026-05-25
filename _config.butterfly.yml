@@ -1,0 +1,141 @@
+nav:
+  logo:
+  display_title: true
+  fixed: false
+
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-heart
+
+index_img: /assets/hero-scene.svg
+default_top_img: /assets/hero-scene.svg
+archive_img: /assets/cover-notes.svg
+tag_img: /assets/cover-code.svg
+category_img: /assets/cover-desk.svg
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  position: both
+  default_cover:
+    - /assets/cover-code.svg
+    - /assets/cover-desk.svg
+    - /assets/cover-notes.svg
+
+avatar:
+  img: /assets/avatar.svg
+  effect: false
+
+subtitle:
+  enable: true
+  effect: true
+  typed_option:
+  source: false
+  sub:
+    - 写代码，也写生活
+    - 把日常里的思考整理成文章
+    - 保持好奇，慢慢积累
+
+social:
+  fab fa-github: https://github.com/1angyyshuo || Github
+  fas fa-envelope: mailto:you@example.com || Email
+  fas fa-rss: /atom.xml || RSS
+
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: false
+    label: true
+  post:
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: 写代码，也写生活。
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/1angyyshuo
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的个人博客，这里记录技术、生活和一些正在发生的想法。
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+    sort_order:
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+    sort_order:
+  card_tags:
+    enable: true
+    limit: 30
+    color: false
+    sort_order:
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+    sort_order:
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    sort_order:
+
+highlight_theme: mac
+highlight_copy: true
+highlight_lang: true
+highlight_shrink: false
+code_word_wrap: false
+
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  style_simple: false
+
+local_search:
+  enable: true
+  preload: false
+  CDN:
+
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+
+footer:
+  owner:
+    enable: true
+    since: 2026
+  custom_text: Built with Hexo and Butterfly.
+
+inject:
+  head:
+  bottom:

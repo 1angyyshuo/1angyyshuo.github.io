@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="书桌主题封面">
+  <rect width="640" height="360" fill="#f7efe1"/>
+  <rect x="82" y="92" width="258" height="184" rx="18" fill="#fff"/>
+  <path fill="#2d8f76" d="M114 132h194v20H114zM114 178h152v16H114zM114 214h176v16H114z"/>
+  <circle cx="454" cy="178" r="74" fill="#f5b66d"/>
+  <circle cx="454" cy="178" r="48" fill="#fff7ed"/>
+  <path fill="#2d8f76" d="M506 150h35c21 0 21 57 0 57h-35v-20h30c8 0 8-17 0-17h-30z"/>
+  <rect x="76" y="286" width="488" height="18" rx="9" fill="#26312d" opacity=".18"/>
+</svg>

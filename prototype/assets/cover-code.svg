@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="代码主题封面">
+  <rect width="640" height="360" fill="#18352f"/>
+  <rect x="54" y="48" width="532" height="264" rx="18" fill="#f8fffb"/>
+  <rect x="54" y="48" width="532" height="48" rx="18" fill="#2d8f76"/>
+  <circle cx="86" cy="72" r="8" fill="#f5b66d"/>
+  <circle cx="114" cy="72" r="8" fill="#fff7ed"/>
+  <circle cx="142" cy="72" r="8" fill="#74d1b8"/>
+  <path stroke="#2d8f76" stroke-linecap="round" stroke-width="14" d="M126 142h120M126 188h214M126 234h154"/>
+  <path stroke="#f5b66d" stroke-linecap="round" stroke-width="14" d="M292 142h86M386 188h128M326 234h120"/>
+</svg>

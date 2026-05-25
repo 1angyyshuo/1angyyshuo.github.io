@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="笔记主题封面">
+  <rect width="640" height="360" fill="#e9f5ef"/>
+  <rect x="78" y="54" width="210" height="252" rx="18" fill="#fff"/>
+  <rect x="116" y="96" width="134" height="16" rx="8" fill="#2d8f76"/>
+  <rect x="116" y="142" width="108" height="14" rx="7" fill="#d7e8e1"/>
+  <rect x="116" y="180" width="134" height="14" rx="7" fill="#d7e8e1"/>
+  <rect x="116" y="218" width="88" height="14" rx="7" fill="#d7e8e1"/>
+  <rect x="334" y="78" width="214" height="188" rx="18" fill="#f5b66d"/>
+  <path fill="#fff7ed" d="M374 210c16-55 48-75 73-44 16 20 28 27 56-29v73H374Z"/>
+  <circle cx="398" cy="126" r="22" fill="#fff7ed"/>
+</svg>

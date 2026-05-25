@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lokaive | 个人博客</title>
+    <meta
+      name="description"
+      content="一个温柔、清爽、适合记录技术、生活与灵感的个人博客主页。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="回到首页">
+        <span class="brand-mark">L</span>
+        <span>Lokaive</span>
+      </a>
+      <nav class="topnav" aria-label="主导航">
+        <a href="#posts">文章</a>
+        <a href="#timeline">时间轴</a>
+        <a href="#about">关于</a>
+      </nav>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="切换主题">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main class="layout">
+      <aside class="profile-panel" id="about" aria-label="个人资料">
+        <img class="avatar" src="assets/avatar.svg" alt="Lokaive 的头像" />
+        <h1>Lokaive</h1>
+        <p class="bio">写代码，也写生活。把遇见的问题、灵感和微小的确定感都认真收起来。</p>
+        <div class="profile-stats" aria-label="博客统计">
+          <span><strong>36</strong>文章</span>
+          <span><strong>9</strong>分类</span>
+          <span><strong>128</strong>标签</span>
+        </div>
+        <div class="socials" aria-label="社交链接">
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="邮件">Email</a>
+          <a href="#" aria-label="RSS">RSS</a>
+        </div>
+      </aside>
+
+      <section class="content">
+        <section class="hero" aria-labelledby="heroTitle">
+          <div>
+            <p class="eyebrow">个人知识花园</p>
+            <h2 id="heroTitle">把日常里的思考，整理成可以回来的地方。</h2>
+          </div>
+          <img src="assets/hero-scene.svg" alt="桌面、笔记和窗口组成的插画" />
+        </section>
+
+        <section class="toolbar" aria-label="文章筛选">
+          <label class="search">
+            <span>搜索</span>
+            <input id="searchInput" type="search" placeholder="输入关键词" />
+          </label>
+          <div class="chips" id="tagFilters" aria-label="标签筛选">
+            <button class="chip is-active" type="button" data-tag="all">全部</button>
+            <button class="chip" type="button" data-tag="技术">技术</button>
+            <button class="chip" type="button" data-tag="生活">生活</button>
+            <button class="chip" type="button" data-tag="笔记">笔记</button>
+          </div>
+        </section>
+
+        <section class="post-list" id="posts" aria-label="文章列表">
+          <article class="post-card" data-tags="技术 笔记">
+            <img src="assets/cover-code.svg" alt="抽象代码封面" />
+            <div>
+              <p class="post-meta">2026-05-18 · 技术 · 8 分钟</p>
+              <h3>给自己的前端工程化清单</h3>
+              <p>从目录结构、样式策略、测试到部署，把那些每次都要重新想一遍的判断沉淀下来。</p>
+              <a href="#">阅读全文</a>
+            </div>
+          </article>
+
+          <article class="post-card" data-tags="生活">
+            <img src="assets/cover-desk.svg" alt="书桌和咖啡封面" />
+            <div>
+              <p class="post-meta">2026-05-12 · 生活 · 5 分钟</p>
+              <h3>周末整理房间时想到的事</h3>
+              <p>空间变清爽之后，脑子里那些悬着的小任务好像也更愿意一个个落地。</p>
+              <a href="#">阅读全文</a>
+            </div>
+          </article>
+
+          <article class="post-card" data-tags="笔记 技术">
+            <img src="assets/cover-notes.svg" alt="便签和图表封面" />
+            <div>
+              <p class="post-meta">2026-04-29 · 笔记 · 6 分钟</p>
+              <h3>读完一本书之后，我怎么做二次整理</h3>
+              <p>不是把摘抄堆起来，而是把它们重新连接到自己的问题、项目和下一步行动里。</p>
+              <a href="#">阅读全文</a>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <aside class="side-panel" aria-label="博客侧栏">
+        <section class="notice">
+          <h2>公告</h2>
+          <p>这里会记录站点更新、最近在做的项目，以及一些短短的想法。</p>
+        </section>
+        <section>
+          <h2>最新文章</h2>
+          <ol class="simple-list">
+            <li><a href="#">给自己的前端工程化清单</a></li>
+            <li><a href="#">周末整理房间时想到的事</a></li>
+            <li><a href="#">读书笔记的二次整理</a></li>
+          </ol>
+        </section>
+        <section>
+          <h2>分类</h2>
+          <div class="category-list">
+            <a href="#">技术 <span>18</span></a>
+            <a href="#">生活 <span>10</span></a>
+            <a href="#">阅读 <span>8</span></a>
+          </div>
+        </section>
+        <section id="timeline">
+          <h2>时间轴</h2>
+          <div class="timeline">
+            <p><span></span>搭建博客主页</p>
+            <p><span></span>整理文章分类</p>
+            <p><span></span>准备第一篇正式文章</p>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Lokaive</span>
+      <span>Built for writing quietly and often.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
