@@ -72,15 +72,29 @@
   min-width: 0;
   aspect-ratio: 1;
   place-items: center;
+  border: 0;
   border-radius: 6px;
   color: var(--font-color);
   background: var(--calendar-cell);
   font-size: 0.74rem;
   line-height: 1;
+  cursor: pointer;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .blog-calendar__day.is-empty {
   background: transparent;
+  pointer-events: none;
+}
+
+.blog-calendar__day:hover,
+.blog-calendar__day:focus-visible {
+  box-shadow: 0 0 0 2px rgba(73, 177, 245, 0.28);
+  transform: translateY(-1px);
+  outline: 0;
 }
 
 .blog-calendar__day.has-posts {
@@ -100,6 +114,12 @@
 .blog-calendar__day.is-today {
   outline: 2px solid rgba(245, 182, 109, 0.82);
   outline-offset: 2px;
+}
+
+.blog-calendar__day.is-selected {
+  box-shadow:
+    0 0 0 2px var(--card-bg),
+    0 0 0 4px var(--calendar-accent);
 }
 
 .blog-calendar__summary {
@@ -148,6 +168,22 @@
   display: grid;
   gap: 8px;
   margin-top: 12px;
+}
+
+.blog-calendar__detail {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--card-border-color);
+}
+
+.blog-calendar__latest {
+  margin-top: 10px;
+}
+
+.blog-calendar__detail-title {
+  color: var(--font-color);
+  font-size: 0.82rem;
+  font-weight: 700;
 }
 
 .blog-calendar__post {
