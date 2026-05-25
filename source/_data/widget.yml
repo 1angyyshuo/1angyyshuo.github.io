@@ -1,0 +1,6 @@
+top:
+  - class_name: card-update-calendar
+    id_name: update-calendar-card
+    name: 更新日历
+    icon: fas fa-calendar-days
+    html: '<div id="blog-update-calendar" class="blog-calendar"><div class="calendar-loading">正在读取更新记录...</div></div>'

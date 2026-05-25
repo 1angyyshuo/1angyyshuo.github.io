@@ -1,0 +1,178 @@
+.card-update-calendar .item-content {
+  padding-top: 2px;
+}
+
+.blog-calendar {
+  --calendar-accent: #49b1f5;
+  --calendar-soft: rgba(73, 177, 245, 0.14);
+  --calendar-cell: rgba(73, 177, 245, 0.08);
+  color: var(--font-color);
+}
+
+.blog-calendar__head,
+.blog-calendar__summary,
+.blog-calendar__legend,
+.blog-calendar__post {
+  display: flex;
+  align-items: center;
+}
+
+.blog-calendar__head {
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.blog-calendar__title {
+  min-width: 92px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.blog-calendar__nav {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border: 1px solid var(--card-border-color);
+  border-radius: 6px;
+  color: var(--font-color);
+  background: var(--card-bg);
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.blog-calendar__nav:hover {
+  color: #fff;
+  border-color: var(--calendar-accent);
+  background: var(--calendar-accent);
+}
+
+.blog-calendar__week,
+.blog-calendar__grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.blog-calendar__week {
+  margin-bottom: 6px;
+  color: var(--font-color);
+  font-size: 0.72rem;
+  opacity: 0.58;
+  text-align: center;
+}
+
+.blog-calendar__day {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 6px;
+  color: var(--font-color);
+  background: var(--calendar-cell);
+  font-size: 0.74rem;
+  line-height: 1;
+}
+
+.blog-calendar__day.is-empty {
+  background: transparent;
+}
+
+.blog-calendar__day.has-posts {
+  color: #fff;
+  background: var(--calendar-accent);
+  font-weight: 700;
+}
+
+.blog-calendar__day.level-2 {
+  background: #2d8f76;
+}
+
+.blog-calendar__day.level-3 {
+  background: #176e5a;
+}
+
+.blog-calendar__day.is-today {
+  outline: 2px solid rgba(245, 182, 109, 0.82);
+  outline-offset: 2px;
+}
+
+.blog-calendar__summary {
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: var(--calendar-soft);
+  font-size: 0.82rem;
+}
+
+.blog-calendar__summary strong {
+  color: var(--calendar-accent);
+}
+
+.blog-calendar__legend {
+  justify-content: flex-end;
+  gap: 5px;
+  margin-top: 9px;
+  color: var(--font-color);
+  font-size: 0.72rem;
+  opacity: 0.7;
+}
+
+.blog-calendar__legend span:not(:first-child) {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  background: var(--calendar-cell);
+}
+
+.blog-calendar__legend .level-1 {
+  background: var(--calendar-accent);
+}
+
+.blog-calendar__legend .level-2 {
+  background: #2d8f76;
+}
+
+.blog-calendar__legend .level-3 {
+  background: #176e5a;
+}
+
+.blog-calendar__recent {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.blog-calendar__post {
+  gap: 8px;
+  min-width: 0;
+  color: var(--font-color);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.blog-calendar__post time {
+  flex: 0 0 auto;
+  color: var(--calendar-accent);
+  font-size: 0.74rem;
+}
+
+.blog-calendar__post a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calendar-loading,
+.calendar-empty {
+  color: var(--font-color);
+  font-size: 0.88rem;
+  opacity: 0.72;
+}

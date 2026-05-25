@@ -78,7 +78,7 @@ aside:
       link: https://github.com/1angyyshuo
   card_announcement:
     enable: true
-    content: 欢迎来到我的个人博客，这里记录技术、生活和一些正在发生的想法。
+    content: 这里会持续记录技术笔记、项目复盘、阅读摘录和生活观察。右侧更新日历会留下每一次写作的脚印。
   card_recent_post:
     enable: true
     limit: 5
@@ -138,4 +138,6 @@ footer:
 
 inject:
   head:
+    - <link rel="stylesheet" href="/css/blog-calendar.css">
   bottom:
+    - <script src="/js/blog-calendar.js"></script>
